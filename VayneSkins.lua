@@ -1,4 +1,5 @@
-if GetObjectName(myHero) ~= "Vayne" then return end
+--if GetObjectName(myHero) ~= "Vayne" then return end
+if GetObjectName(myHero) == "Vayne" or GetObjectName(myHero) == "Bard" then return end
 
 local ver = "0.02"
 
