@@ -16,10 +16,10 @@ require ("MapPositionGOS")
 require ("ChallengerCommon")
 
 
-local VayneMenu = Menu("Skin Changer", "Skin Changer")
+local VayneMenu = Menu("Vayne", "Vayne")
 
 --Skin Changer
-VayneMenu:SubMenu("Vayne", "Vayne")
+VayneMenu:SubMenu("Skin Changer", "Skin Changer")
 
 local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
 VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
