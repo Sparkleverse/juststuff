@@ -23,10 +23,10 @@ local SkinMenu = Menu("SkinChanger", "SkinChanger")
 
 
 local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
---SkinMenu.
-SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
---SkinMenu.
-SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
+--SkinMenu.SkinChanger
+SkinMenu:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
+--SkinMenu.SkinChanger
+SkinMenu.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
 
 --Hope you enjoyed reading this script in github. It's pretty simple.
 print("Hope you enjoy the Skin Changer V:" ..ver.. "; Enjoy " ..myHero.name.. "! :^>")	
