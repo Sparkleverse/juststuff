@@ -6,10 +6,10 @@ function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
         print("New version found! " .. data)
         print("Downloading update, please wait...")
-        DownloadFileAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinChanger.lua", SCRIPT_PATH .. "SkinChanger.lua", function() print("Update Complete, please 2x F6!") return end)
+        DownloadFileAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/VayneSkins.lua", SCRIPT_PATH .. "VayneSkins.lua", function() print("Update Complete, please 2x F6!") return end)
     end
 end
-GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinChanger.version", AutoUpdate)
+GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/VayneSkins.version", AutoUpdate)
 
 require ("OpenPredict")
 require ("MapPositionGOS")
