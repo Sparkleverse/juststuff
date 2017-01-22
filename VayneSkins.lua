@@ -19,11 +19,12 @@ require ("ChallengerCommon")
 --[[local SkinMenu = Menu("Vayne", "Vayne")
 --Skin Changer
 SkinMenu:SubMenu("SkinChanger", "SkinChanger")]]
-if GetObjectName(myHero) ~= "Vayne" then return
+
 local SkinMenu = Menu("SkinChanger", "SkinChanger")
 
-    local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
+local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
 --SkinMenu.SkinChanger
+if GetObjectName(myHero) ~= "Vayne" then return
     SkinMenu:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
 --SkinMenu.SkinChanger
     SkinMenu.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
