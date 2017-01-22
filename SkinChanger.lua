@@ -16,7 +16,7 @@ require ("MapPositionGOS")
 require ("ChallengerCommon")
 
 
-local VayneMenu = Menu("Vayne", "VVayne")
+local VayneMenu = Menu("VVayne", "Vayne")
 --[[VayneMenu:SubMenu("Combo", "Combo")
 VayneMenu.Combo:Boolean("CQ", "Use Q", true)
 VayneMenu.Combo:SubMenu("EO", "E Options")
