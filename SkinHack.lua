@@ -28,7 +28,8 @@ local skinMeta = {["Bard"] = {"Classic", "Elderwood", "Bloom Marigold", "Bloom I
     ["Khazix"] = {"Classic", "Mecha", "GotS (Broken Claws ATM)", "Death Blossom"},
     ["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"},
     ["Veigar"] = {"Classic", "White Mage", "Curling", "Greybeard", "Leprechaun", "Baron Von", "Superb Villain", "Bad Santa", "Final Boss"},
-    ["Vi"] = {"Classic", "Neon Strike", "Officer", "Debonair", "Demon", "Warring Kingdoms"}}
+    ["Vi"] = {"Classic", "Neon Strike", "Officer", "Debonair", "Demon", "Warring Kingdoms"},
+	["Viktor"] = {"Classic", "Full Machine", "Prototype", "Creator"}}
 
 
 --SkinMenu.SkinChanger
