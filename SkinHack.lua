@@ -7,7 +7,7 @@
 --if GetObjectName(myHero) ~= "Vayne" then return end
 --if GetObjectName(myHero) == "Vayne" or GetObjectName(myHero) == "Bard" then return end
 
-local ver = "0.02"
+local ver = "0.25"
 
 function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
