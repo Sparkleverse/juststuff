@@ -9,7 +9,7 @@ function AutoUpdate(data)
         DownloadFileAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinChanger.lua", SCRIPT_PATH .. "SkinChanger.lua", function() print("Update Complete, please 2x F6!") return end)
     end
 end
-GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/stuff/master/SkinChanger.version", AutoUpdate)
+GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinChanger.version", AutoUpdate)
 
 require ("OpenPredict")
 require ("MapPositionGOS")
