@@ -23,9 +23,11 @@ SkinMenu:SubMenu("SkinChanger", "SkinChanger")]]
 local SkinMenu = Menu("SkinChanger", "SkinChanger")
 
 
-local skinMeta = {["Bard"] = {"Classic", "Elderwood", "Snowday", "Bard"}, 
-    ["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"},
-    ["Jhin"] = {"Classic", "High Noon"}
+local skinMeta = {["Bard"] = {"Classic", "Elderwood", "Bloom Marigold", "Bloom Ivy", "Bloom Sage", "Snow Day", "Bard Bard"}, 
+    ["Jhin"] = {"Classic", "High Noon"}, 
+    ["Khazix"] = {"Classic", "Mecha", "Guardian of the Sands", "Death Blossom"},
+    ["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
+
 
 --SkinMenu.SkinChanger
 SkinMenu:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
