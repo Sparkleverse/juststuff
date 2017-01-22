@@ -1,4 +1,5 @@
 if GetObjectName(myHero) ~= "Vayne" then return end
+if GetObjectName(myHero) ~= "Bard" then return end
 
 local ver = "0.01"
 
@@ -25,6 +26,12 @@ local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSla
 VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
 VayneMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
 
+--IDK
+VayneMenu:SubMenu("Bard", "Bard")
+
+local skinMeta = {["Bard"] = {"Classic", "Elderwood", "Snow Day", "Bard"}}
+VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
+VayneMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end
 
 --AYYYYYYYY
 print("Hope you enjoy the Skin Changer; Have Fun " ..myHero.name.. " :^>")	
