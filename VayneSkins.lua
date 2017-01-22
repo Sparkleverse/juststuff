@@ -16,14 +16,14 @@ require ("MapPositionGOS")
 require ("ChallengerCommon")
 
 
-local VayneMenu = Menu("Vayne", "Vayne")
+local SkinMenu = Menu("Vayne", "Vayne")
 
 --Skin Changer
-VayneMenu:SubMenu("SkinChanger", "SkinChanger")
+SkinMenu:SubMenu("SkinChanger", "SkinChanger")
 
 local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
-VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
-VayneMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
+SkinMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
+SkinMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
 
 --AYYYYYYYY
 print("Hope you enjoy the Skin Changer; Have Fun " ..myHero.name.. " :^>")	
