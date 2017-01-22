@@ -19,7 +19,7 @@ require ("ChallengerCommon")
 local VayneMenu = Menu("Vayne", "Vayne")
 
 --Skin Changer
-VayneMenu:SubMenu("Skin Changer", "Skin Changer")
+VayneMenu:SubMenu("SkinChanger", "SkinChanger")
 
 local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
 VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
