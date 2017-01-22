@@ -26,4 +26,4 @@ SkinMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skin List", 1, skinMet
 SkinMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
 
 --AYYYYYYYY
-print("Hope you enjoy the Skin Changer; Have Fun " ..myHero.name.. " :^>")	
+print("Hope you enjoy the Skin Changer V:" ..ver.. "; Have Fun " ..myHero.name.. " :^>")	
