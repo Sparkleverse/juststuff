@@ -6,7 +6,7 @@ function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
         print("New version found! " .. data)
         print("Downloading update, please wait...")
-        DownloadFileAsync("https://github.com/Sparkleverse/juststuff/blob/master/SkinChanger.lua", SCRIPT_PATH .. "SkinChanger.lua", function() print("Update Complete, please 2x F6!") return end)
+        DownloadFileAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinChanger.lua", SCRIPT_PATH .. "SkinChanger.lua", function() print("Update Complete, please 2x F6!") return end)
     end
 end
 GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/stuff/master/SkinChanger.version", AutoUpdate)
