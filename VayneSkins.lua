@@ -19,7 +19,7 @@ require ("ChallengerCommon")
 --[[local SkinMenu = Menu("Vayne", "Vayne")
 --Skin Changer
 SkinMenu:SubMenu("SkinChanger", "SkinChanger")]]
-if GetObjectName(myHero) ~= "Vayne" then
+if GetObjectName(myHero) ~= "Vayne" then return
 local SkinMenu = Menu("SkinChanger", "SkinChanger")
 
     local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSlayer", "Heartseeker", "SKT T1", "Arclight", "DragonSlayer Green", "DragonSlayer Red", "DragonSlayer Blue", "SoulStealer"}}
