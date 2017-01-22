@@ -1,22 +1,22 @@
 if GetObjectName(myHero) ~= "Vayne" then return end
 
-local ver = "0.06"
+local ver = "0.01"
 
 function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
         print("New version found! " .. data)
         print("Downloading update, please wait...")
-        DownloadFileAsync("https://raw.githubusercontent.com/Toshibiotro/stuff/master/EternalVayne.lua", SCRIPT_PATH .. "EternalVayne.lua", function() print("Update Complete, please 2x F6!") return end)
+        DownloadFileAsync("https://github.com/Sparkleverse/juststuff/blob/master/SkinChanger.lua", SCRIPT_PATH .. "SkinChanger.lua", function() print("Update Complete, please 2x F6!") return end)
     end
 end
-GetWebResultAsync("https://raw.githubusercontent.com/Toshibiotro/stuff/master/EternalVayne.version", AutoUpdate)
+GetWebResultAsync("https://raw.githubusercontent.com/Toshibiotro/stuff/master/SkinChanger.version", AutoUpdate)
 
 require ("OpenPredict")
 require ("MapPositionGOS")
 require ("ChallengerCommon")
 
 
-local VayneMenu = Menu("Vayne", "Vayne")
+--[[local VayneMenu = Menu("Vayne", "Vayne")
 VayneMenu:SubMenu("Combo", "Combo")
 VayneMenu.Combo:Boolean("CQ", "Use Q", true)
 VayneMenu.Combo:SubMenu("EO", "E Options")
@@ -76,7 +76,7 @@ VayneMenu:SubMenu("Draw", "Drawings")
 VayneMenu.Draw:Boolean("DAA", "Draw AA Range", true)
 VayneMenu.Draw:Boolean("DQ", "Draw Q Range", true)
 VayneMenu.Draw:Boolean("DE", "Draw E Range", true)
-VayneMenu.Draw:Boolean("DWD", "Draw W Damage", true)
+VayneMenu.Draw:Boolean("DWD", "Draw W Damage", true)]]
 
 VayneMenu:SubMenu("SkinChanger", "SkinChanger")
 
@@ -84,7 +84,7 @@ local skinMeta = {["Vayne"] = {"Classic", "Vindicator", "Aristocrat", "DragonSla
 VayneMenu.SkinChanger:DropDown('skin', myHero.charName.. " Skins", 1, skinMeta[myHero.charName], HeroSkinChanger, true)
 VayneMenu.SkinChanger.skin.callback = function(model) HeroSkinChanger(myHero, model - 1) print(skinMeta[myHero.charName][model] .." ".. myHero.charName .. " Loaded!") end	
 
-local target = GetCurrentTarget()
+--[[local target = GetCurrentTarget()
 function QDmg(unit) return CalcDamage(myHero, unit, myHero.totalDamage + (myHero.totalDamage * (0.25 + 0.05 * GetCastLevel(myHero, _W))), 0) end
 function WDmg(unit) return CalcDamage(myHero, unit, AADmg(unit), 0) + (unit.maxHealth * (0.045 + 0.015 * GetCastLevel(myHero, _W))) end
 function AADmg(unit) return CalcDamage(myHero, unit, myHero.totalDamage, 0) end
@@ -614,6 +614,6 @@ OnLoad(function()
 			CastTargetSpell(unit, _E)
 		end	
 	end)
-end)	
+end)]]	
 
-print("Thanks For Using Eternal Vayne, Have Fun " ..myHero.name.. " :)")	
+print("Thanks For Using THIS STUPID SHIT, Have Fun " ..myHero.name.. " :)")	
