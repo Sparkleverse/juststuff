@@ -17,7 +17,7 @@ require ("ChallengerCommon")
 
 
 local VayneMenu = Menu("Vayne", "Vayne")
-VayneMenu:SubMenu("Combo", "Combo")
+--[[VayneMenu:SubMenu("Combo", "Combo")
 VayneMenu.Combo:Boolean("CQ", "Use Q", true)
 VayneMenu.Combo:SubMenu("EO", "E Options")
 VayneMenu.Combo.EO:Boolean("EC", "Use E To Peel", true)
@@ -76,7 +76,7 @@ VayneMenu:SubMenu("Draw", "Drawings")
 VayneMenu.Draw:Boolean("DAA", "Draw AA Range", true)
 VayneMenu.Draw:Boolean("DQ", "Draw Q Range", true)
 VayneMenu.Draw:Boolean("DE", "Draw E Range", true)
-VayneMenu.Draw:Boolean("DWD", "Draw W Damage", true)
+VayneMenu.Draw:Boolean("DWD", "Draw W Damage", true)]]
 
 VayneMenu:SubMenu("SkinChanger", "SkinChanger")
 
