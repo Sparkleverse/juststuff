@@ -18,9 +18,9 @@ function AutoUpdate(data)
 end
 GetWebResultAsync("https://raw.githubusercontent.com/Sparkleverse/juststuff/master/SkinHack.version", AutoUpdate)
 
-require ("OpenPredict")
+--[[require ("OpenPredict")
 require ("MapPositionGOS")
-require ("ChallengerCommon")
+require ("ChallengerCommon")]]
 
 
 --[[local SkinMenu = Menu("Vayne", "Vayne")
